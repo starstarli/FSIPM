@@ -1,4 +1,4 @@
-#Function-structural Interaction with Progressive and Multi-level Feature Fusion for ADHD Classification
+Function-structural Interaction with Progressive and Multi-level Feature Fusion for ADHD Classification
 
 A method for ADHD Classification based on multi-modal brain images.
 
