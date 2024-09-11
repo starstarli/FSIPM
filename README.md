@@ -13,7 +13,7 @@ A method for ADHD Classification based on multi-modal brain images.
 - loss_function.py -- loss function used in our method.
 - utils.py -- Some functions utilized in our model.
 
-##Prerequisite
+## Prerequisite
 
 - Python environment with python 3.8
 - Install pytorch >= 1.12.1
