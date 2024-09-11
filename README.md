@@ -10,7 +10,7 @@ A method for ADHD Classification based on multi-modal brain images.
 - test.py -- Evaluate the model.
 - net.py -- Networks of our method.
 - data_loader.py -- Load data from dataset.
-- loss_function.py -- loss function used in our method.
+- loss_function.py -- Loss function used in our method.
 - utils.py -- Some functions utilized in our model.
 
 ## Prerequisite
