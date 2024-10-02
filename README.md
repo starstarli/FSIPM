@@ -4,14 +4,7 @@ A method for ADHD Classification based on multi-modal brain images.
 
 ## File description
 
-- train_kflod.py -- The main file for setting and training model under the cross-validation.
-- train_is.py -- The main file for setting and training model under the is-validation.
-- valid.py -- Evaluation for validation set.
-- test.py -- Evaluate the model.
-- net.py -- Networks of our method.
-- data_loader.py -- Load data from dataset.
-- loss_function.py -- Loss function used in our method.
-- utils.py -- Some functions utilized in our model.
+- If the article is fortunate enough to be accepted, the complete code will be released
 
 ## Prerequisite
 
