@@ -272,12 +272,12 @@ class FSIPM(nn.Module):
             nn.Linear(4, 4),
             nn.LeakyReLU(0.33),
             nn.Dropout(0.2),
-            nn.Linear(4, 2),
+            nn.Linear(4, 4),
             nn.LeakyReLU(0.33)
         )
 
         self.fc1 = nn.Sequential(
-            nn.Linear(1712, 128),
+            nn.Linear(1716, 128),
             nn.LeakyReLU(0.33),
             nn.Dropout(0.2),
             nn.Linear(128, 128),
