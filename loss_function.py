@@ -2,11 +2,9 @@ import torch
 import torch.nn as nn
 
 class MyTriplet_loss(nn.Module):
-    def __init__(self, margin=1.0, loss_weight=1.0):
+    def __init__(self, margin=0.8):
         super(MyTriplet_loss, self).__init__()
         self.margin = margin
-        self.ranking_loss = nn.MarginRankingLoss(margin=margin)
-        self.loss_weight = loss_weight
     def Euclidean_Distance(self,inputs):
         n = inputs.size(0)
         dist = torch.pow(inputs, 2).sum(dim=1, keepdim=True).expand(n, n)
@@ -22,7 +20,6 @@ class MyTriplet_loss(nn.Module):
         return dist
     def forward(self, inputs, targets):
         # distances
-        # dist = self.Cosine_Similarity(inputs)
         dist = self.Euclidean_Distance(inputs)
         ap_dist = dist.unsqueeze(2) 
         an_dist = dist.unsqueeze(1) 
