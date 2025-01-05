@@ -290,20 +290,6 @@ class FSIPM(nn.Module):
         )
 
     
-    def set_attribute(self,att_1,att_off_1,index_1,att_2,att_off_2,index_2,att_3,att_off_3,index_3):
-        self.att_1 = att_1
-        self.att_off_1 = att_off_1
-        self.index_1 = index_1
-
-        self.att_2 = att_2
-        self.att_off_2 = att_off_2
-        self.index_2 = index_2
-
-        self.att_3 = att_3
-        self.att_off_3 = att_off_3
-        self.index_3 = index_3
-        
-        return 0
 
     def forward(self, x):
         # inputs n*T*1
