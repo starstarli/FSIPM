@@ -305,7 +305,7 @@ class FSIPM(nn.Module):
         batch_trans_1 = self.ST_trans_1(inputs)
         #===========SI-A========
         batch_7,att_off_1 = self.SC_conv_1(inputs_s)
-        #===========FS-IE========
+        #===========FS-I2========
         st_gconv_1 = self.ST_conv_1(inputs * att_1)
         sp_attp_1,sc_attp_1,index_1 = self.FS_AttPool_1(st_gconv_1,inputs_s*att_off_1,att_1,att_off_1)
         batch_4 = self.ST_aggregation_1(sp_attp_1)
@@ -316,7 +316,7 @@ class FSIPM(nn.Module):
         batch_trans_2 = self.ST_trans_2(sp_attp_1)
         #===========SI-A========
         batch_8,att_off_2 = self.SC_conv_2(sc_attp_1)
-        #===========FS-IE========
+        #===========FS-I2========
         st_gconv_2 = self.ST_conv_2(sp_attp_1)
         sp_attp_2,sc_attp_2,index_2 = self.FS_AttPool_2(st_gconv_2,sc_attp_1*att_off_2,att_2,att_off_2)
         batch_5 = self.ST_aggregation_2(sp_attp_2)
@@ -327,7 +327,7 @@ class FSIPM(nn.Module):
         batch_trans_3 = self.ST_trans_3(sp_attp_2)
         #===========SI-A========
         batch_9,att_off_3 = self.SC_conv_3(sc_attp_2)
-        #===========FS-IE========
+        #===========FS-I2========
         st_gconv_3 = self.ST_conv_3(sp_attp_2)
         sp_attp_3,sc_attp_3,index_3 = self.FS_AttPool_3(st_gconv_3,sp_attp_2*att_off_3,att_3,att_off_3)
         batch_6 = self.ST_aggregation_3(sp_attp_3)
