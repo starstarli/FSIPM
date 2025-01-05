@@ -152,9 +152,6 @@ if __name__ == '__main__':
     same_seeds(seed)
     # tasks
     pick = [0, 1]
-    # pick = [0, 2]
-    # pick = [1, 2]
-    # pick = [0,1,2,3]
 
     # get data
     data, pheno,label = load_dataset(file_path, file_name, pick=pick)
